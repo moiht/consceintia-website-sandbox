@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  --clr-primary: #29221d;
+  --clr-primar-light: #473b33;
+  --clr-secondary: #1e1611;
+  --clr-white: #fff;
+  --clr-black: #000;
+  --clr-pumpkin: #fe6c00;
+  --clr-silver: #a8a5a6;
+  --clr-silver-v1: #bdbabb;
+  --clr-scarlet: #fe1e00;
+  --clr-scarlet-v1: rgb(254, 30, 0, 0.79);
+  --clr-green: #00fe93;
+  --clr-yellow: #fec80a;
+  --clr-jet: #302924;
+  --clr-peach: #ffc397;
+  --font-family-bai: "Bai Jamjuree", sans-serif;
+  --transition-default: all 300ms ease-in-out;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

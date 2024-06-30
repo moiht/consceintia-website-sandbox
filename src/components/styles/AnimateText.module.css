@@ -1,0 +1,42 @@
+/* Base */
+.mybody {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.myh1 {
+  color: hsl(0, 0%, 28%);
+  font-size: 2.5em !important;
+  font-weight: bold !important;
+  font-family: monospace;
+  letter-spacing: 7px !important;
+  cursor: pointer;
+  text-transform: uppercase;
+  line-height: 1em;
+  padding: 1.5em 0.5em;
+  text-align: center;
+  background: linear-gradient(
+    to right,
+    hsl(0, 0%, 30%) 0,
+    hsl(0, 0%, 100%) 10%,
+    hsl(0, 0%, 30%) 20%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 600px;
+  }
+  100% {
+    background-position: 600px;
+  }
+}

@@ -1,0 +1,15 @@
+.home {
+  height: 100vh;
+}
+.homecenter {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.homecoming {
+  font-size: 5em;
+  font-weight: 500;
+}

@@ -1,0 +1,294 @@
+{
+    "modelName": "New Model",
+    "collections": [
+        {
+            "collectionName": "Users",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "Email",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "359be790-bb8b-4985-a472-e18eda843813",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "Username",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "af0cfc20-7bf2-4f89-a556-b8cd9aaccbab",
+                    "required": true,
+                    "primaryKey": true,
+                    "error": {}
+                },
+                {
+                    "name": "eventsRegistered",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [],
+                            "additionalProperties": false,
+                            "GUID": "c4d36a60-e2d4-4c88-89be-90907c947224",
+                            "arrayItem": true,
+                            "foreignCollection": "95ef8eea-3732-4349-b111-f23c7bb46b02",
+                            "error": {}
+                        }
+                    ],
+                    "additionalItems": true,
+                    "error": {},
+                    "GUID": "4dd888f5-b228-403f-8f98-ec449293f29b"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "bc6bc99e-093f-4bb4-9850-4f82404abb76"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "3895d7ad-ac77-4a15-9ac6-95ce5e1b4245",
+            "bucketId": "d3c601ce-37af-4015-9965-c6db093f280a"
+        },
+        {
+            "collectionName": "Events",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "eventID",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "d2933b19-063b-459d-8523-eeaa991d7ee7",
+                    "required": true,
+                    "primaryKey": true,
+                    "error": {}
+                },
+                {
+                    "name": "eventName",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "9f66fa47-cafd-4646-b018-c2a35cdfbd2d",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "0180facf-546b-49a0-8f51-12484bc0ce5e"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "95ef8eea-3732-4349-b111-f23c7bb46b02",
+            "bucketId": "d3c601ce-37af-4015-9965-c6db093f280a"
+        }
+    ],
+    "buckets": [
+        {
+            "name": "Conscientia2k24",
+            "type": "bucket",
+            "collectionIds": [
+                "3895d7ad-ac77-4a15-9ac6-95ce5e1b4245",
+                "95ef8eea-3732-4349-b111-f23c7bb46b02"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "GUID": "d3c601ce-37af-4015-9965-c6db093f280a"
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "name": "New Relationship",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "isActivated": true,
+            "childCardinality": "1",
+            "GUID": "ce6c6a59-441d-4edd-9272-e198f8d787e1",
+            "parentCollection": "3895d7ad-ac77-4a15-9ac6-95ce5e1b4245",
+            "childCollection": "95ef8eea-3732-4349-b111-f23c7bb46b02",
+            "hackoladeStyles": {
+                "GUID": "3e358f6b-f352-4f93-bfc5-556720710d18",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1224,
+                        "y": 1117.5
+                    },
+                    {
+                        "x": 1182.5,
+                        "y": 1117.5
+                    },
+                    {
+                        "x": 1182.5,
+                        "y": 1083
+                    },
+                    {
+                        "x": 1141,
+                        "y": 1083
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "3895d7ad-ac77-4a15-9ac6-95ce5e1b4245": "Users",
+        "af0cfc20-7bf2-4f89-a556-b8cd9aaccbab": "Username",
+        "359be790-bb8b-4985-a472-e18eda843813": "Email",
+        "95ef8eea-3732-4349-b111-f23c7bb46b02": "Events",
+        "d2933b19-063b-459d-8523-eeaa991d7ee7": "eventID",
+        "9f66fa47-cafd-4646-b018-c2a35cdfbd2d": "eventName",
+        "4dd888f5-b228-403f-8f98-ec449293f29b": "eventsRegistered",
+        "d3c601ce-37af-4015-9965-c6db093f280a": "Conscientia2k24",
+        "ce6c6a59-441d-4edd-9272-e198f8d787e1": "New Relationship"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "f0c12eb4-245b-416f-8ff9-6585c0c930db"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "791007c4-2ef0-4469-a768-5ec824478c13"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "6c8b0e99-64b4-4035-892b-2e7c8f9c6741"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "v7.x",
+    "dbVendor": "MongoDB",
+    "appTarget": "MONGODB",
+    "creationTS": "2024-05-16T01:54:35.833Z",
+    "GUID": "14b89e56-8397-4c5e-812c-c5b1c97d2170",
+    "isLineageEnabled": false,
+    "lastModifTS": "2024-05-16T02:45:05.584Z",
+    "persistenceSchemaVersion": "7",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "7.4.2"
+    },
+    "hackoladeMeta": {},
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "3895d7ad-ac77-4a15-9ac6-95ce5e1b4245",
+                        "x": 892,
+                        "y": 998,
+                        "width": 249,
+                        "height": 170,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "95ef8eea-3732-4349-b111-f23c7bb46b02",
+                        "x": 1224,
+                        "y": 1083,
+                        "width": 206,
+                        "height": 69,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 852,
+                        "y": 958,
+                        "GUID": "d3c601ce-37af-4015-9965-c6db093f280a"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [
+                    {
+                        "autoWidth": false,
+                        "autoHeight": false,
+                        "GUID": "3895d7ad-ac77-4a15-9ac6-95ce5e1b4245"
+                    }
+                ],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}
